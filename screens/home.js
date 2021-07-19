@@ -1,15 +1,10 @@
 import React from 'react';
 import {StyleSheet , Text , View } from 'react-native'
-
+import { globalStyles } from '../styles/global'
 export default function Home(){
     return(
-        <View style={styles.container}>
-            <Text> Home Page </Text>
+        <View style={globalStyles.container}>
+            <Text style={globalStyles.header}> Home Page </Text>
         </View>
     );
 }
-const styles = StyleSheet.create({
-    container :{
-        padding :40
-    }
-});

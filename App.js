@@ -1,10 +1,14 @@
 
 import React,{useState} from 'react';
-import Home from './screens/home';
-import * as Font from 'expo-font';
-import AppLoading  from 'expo-app-loading';
 import {Text} from 'react-native';
-import Navigator from './routes/homestack'
+import * as Font from 'expo-font';
+
+import AppLoading  from 'expo-app-loading';
+//import Navigator from './routes/homestack'
+import Navigator from './routes/drawernav';
+
+
+
 
 const loadFont = ()=>Font.loadAsync({
     'merrie-regular':require('./assets/fonts/Merriweather-Regular.ttf'),
@@ -16,11 +20,12 @@ export default function App() {
   if(isFontLoaded){
     return (
       //initial changes again
-      <Navigator/>
+       <Navigator/>
+      
     );
   }else{ 
     return(
-      
+        
         <AppLoading
         startAsync = {loadFont}
         onFinish = {()=>setFontLoaded(true)}

@@ -6,6 +6,12 @@ export const globalStyles = StyleSheet.create({
         padding :40
     },
     header:{
-        fontFamily:'merrie-bold'
+        fontFamily:'merrie-bold',
+        width:'100%',
+        backgroundColor:'#fff',
+        padding:10,
+        borderRadius:5,
+        textAlign:'center',
+        fontSize:20
     }
 });
